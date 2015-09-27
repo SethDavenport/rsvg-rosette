@@ -1,0 +1,33 @@
+{
+  "name": "rsvg-rosette",
+  "version": "0.0.1",
+  "description": "A React component that makes rosette-geometry constructions in SVG",
+  "main": "lib/rosette.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "babel -d lib/ src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SethDavenport/rsvg-rosette.git"
+  },
+  "keywords": [
+    "React",
+    "SVG",
+    "Rosette"
+  ],
+  "author": "Seth Davenport <seth@rangle.io> (https://github.com/SethDavenport)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SethDavenport/rsvg-rosette/issues"
+  },
+  "homepage": "https://github.com/SethDavenport/rsvg-rosette",
+  "devDependencies": {
+    "babel": "^5.8.23"
+  },
+  "dependencies": {
+    "fgeo": "^1.0.4",
+    "react": "^0.13.3",
+    "rsvg-path": "0.0.3"
+  }
+}
