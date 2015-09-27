@@ -100,7 +100,6 @@ export class Rosette extends React.Component {
 }
 
 function _toSegmentType(constructionMode) {
-  console.log(RSVG)
   switch (constructionMode) {
     case ConstructionModes.ARC_CELLS: return RSVG.SegmentTypes.ARC;
     case ConstructionModes.Q_BEZIER_CELLS: return RSVG.SegmentTypes.Q_BEZIER;
