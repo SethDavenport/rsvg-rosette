@@ -20,7 +20,7 @@ export class Rosette extends React.Component {
         +this.props.samples);
 
     return (
-      <g>
+      <g id={this.props.id}>
         {this._renderGuideCircle(rosette)}
         {this._renderCircles(rosette)}
         {this._renderCells(rosette)}
