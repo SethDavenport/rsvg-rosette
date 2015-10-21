@@ -12,15 +12,16 @@ export const ConstructionModes = {
 
 export class Rosette extends React.Component {
   render () {
+    var { cx, cy, guideRadius, radius, samples, ...other } = this.props;
     var rosette = new fgeo.rosette.Rosette(
         new fgeo.circle.Circle(
-          new fgeo.point.Point(+this.props.cx, +this.props.cy),
-          +this.props.guideRadius),
-        +this.props.radius,
-        +this.props.samples);
+          new fgeo.point.Point(+cx, +cy),
+          +guideRadius),
+        +radius,
+        +samples);
 
     return (
-      <g id={this.props.id}>
+      <g {...other}>
         {this._renderGuideCircle(rosette)}
         {this._renderCircles(rosette)}
         {this._renderCells(rosette)}
